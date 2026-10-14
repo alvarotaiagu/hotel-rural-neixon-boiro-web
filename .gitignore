@@ -1,0 +1,8 @@
+pruebas/
+node_modules/
+ref/
+scripts/.cache/
+scripts/_tmp/
+scripts/__pycache__/
+marca/comparacion.png
+marca/tipografias.png

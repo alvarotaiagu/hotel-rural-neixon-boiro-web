@@ -1,0 +1,462 @@
+[
+  {
+    "nombre": "fachada",
+    "origen": "2025/11/P1010061-scaled.jpg",
+    "ia": false,
+    "ancho": 2560,
+    "alto": 1920,
+    "anchos": [
+      480,
+      800,
+      1200,
+      1600,
+      2200
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "balcon-pinar",
+    "origen": "2026/01/Mesita-en-el-balcon-con-vistas.png",
+    "ia": true,
+    "ancho": 1024,
+    "alto": 1536,
+    "anchos": [
+      480,
+      800,
+      1024
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "jacuzzi",
+    "origen": "2026/03/ba.png",
+    "ia": true,
+    "ancho": 2048,
+    "alto": 1365,
+    "anchos": [
+      480,
+      800,
+      1200,
+      1600,
+      2048
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "suite",
+    "origen": "2026/01/ChatGPT-Image-15-ene-2026-18_08_45.png",
+    "ia": true,
+    "ancho": 1024,
+    "alto": 1536,
+    "anchos": [
+      480,
+      800,
+      1024
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "suite-jacuzzi",
+    "origen": "2026/01/ChatGPT-Image-15-ene-2026-17_57_33.png",
+    "ia": true,
+    "ancho": 1024,
+    "alto": 1536,
+    "anchos": [
+      480,
+      800,
+      1024
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "confort",
+    "origen": "2026/01/ChatGPT-Image-15-ene-2026-18_35_50.png",
+    "ia": true,
+    "ancho": 1536,
+    "alto": 1024,
+    "anchos": [
+      480,
+      800,
+      1200,
+      1536
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "doble",
+    "origen": "2026/03/habitacion-doble.png",
+    "ia": true,
+    "ancho": 1198,
+    "alto": 896,
+    "anchos": [
+      480,
+      800,
+      1198
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "duplex",
+    "origen": "2026/01/ChatGPT-Image-15-ene-2026-18_49_00.png",
+    "ia": true,
+    "ancho": 1536,
+    "alto": 1024,
+    "anchos": [
+      480,
+      800,
+      1200,
+      1536
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "terraza",
+    "origen": "2026/01/ChatGPT-Image-16-ene-2026-11_47_30.png",
+    "ia": true,
+    "ancho": 1536,
+    "alto": 1024,
+    "anchos": [
+      480,
+      800,
+      1200,
+      1536
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "terraza-fuera",
+    "origen": "2026/01/ChatGPT-Image-16-ene-2026-11_39_04.png",
+    "ia": true,
+    "ancho": 1536,
+    "alto": 1024,
+    "anchos": [
+      480,
+      800,
+      1200,
+      1536
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "terraza-superior",
+    "origen": "2026/01/ChatGPT-Image-16-ene-2026-12_02_15.png",
+    "ia": true,
+    "ancho": 1536,
+    "alto": 1024,
+    "anchos": [
+      480,
+      800,
+      1200,
+      1536
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "terraza-superior-tumbonas",
+    "origen": "2026/01/ChatGPT-Image-16-ene-2026-11_37_13.png",
+    "ia": true,
+    "ancho": 1536,
+    "alto": 1024,
+    "anchos": [
+      480,
+      800,
+      1200,
+      1536
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "atico",
+    "origen": "2026/01/Dormitorio-acogedor-con-techos-de-madera.png",
+    "ia": true,
+    "ancho": 1536,
+    "alto": 1024,
+    "anchos": [
+      480,
+      800,
+      1200,
+      1536
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "superior",
+    "origen": "2026/01/ChatGPT-Image-16-ene-2026-12_09_02.png",
+    "ia": true,
+    "ancho": 1536,
+    "alto": 1024,
+    "anchos": [
+      480,
+      800,
+      1200,
+      1536
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "bungalow-i",
+    "origen": "2026/02/cama-doble.png",
+    "ia": true,
+    "ancho": 1536,
+    "alto": 1024,
+    "anchos": [
+      480,
+      800,
+      1200,
+      1536
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "bungalow-i-chimenea",
+    "origen": "2026/02/bungalow-1-chimenea.png",
+    "ia": true,
+    "ancho": 1024,
+    "alto": 1536,
+    "anchos": [
+      480,
+      800,
+      1024
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "bungalow-i-salon",
+    "origen": "2026/02/bungalow-1-salon.png",
+    "ia": true,
+    "ancho": 1024,
+    "alto": 1536,
+    "anchos": [
+      480,
+      800,
+      1024
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "bungalow-ii",
+    "origen": "2026/02/dormitorio-cama-doble-morado.png",
+    "ia": true,
+    "ancho": 1024,
+    "alto": 1536,
+    "anchos": [
+      480,
+      800,
+      1024
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "bungalow-ii-cocina",
+    "origen": "2026/02/cocina-1.png",
+    "ia": true,
+    "ancho": 1024,
+    "alto": 1536,
+    "anchos": [
+      480,
+      800,
+      1024
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "bungalows",
+    "origen": "2026/02/bungalow.png",
+    "ia": true,
+    "ancho": 1302,
+    "alto": 1023,
+    "anchos": [
+      480,
+      800,
+      1200
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "bungalows-porche",
+    "origen": "2026/02/footer-bungalows-e1772019730668.png",
+    "ia": true,
+    "ancho": 1024,
+    "alto": 858,
+    "anchos": [
+      480,
+      800,
+      1024
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "cafeteria",
+    "origen": "2026/03/cafeteria.png",
+    "ia": true,
+    "ancho": 1536,
+    "alto": 1024,
+    "anchos": [
+      480,
+      800,
+      1200,
+      1536
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "cafeteria-sala",
+    "origen": "2026/03/cafeteria-1.png",
+    "ia": true,
+    "ancho": 1536,
+    "alto": 1024,
+    "anchos": [
+      480,
+      800,
+      1200,
+      1536
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "cafe",
+    "origen": "2026/03/cafe-con-leche.png",
+    "ia": true,
+    "ancho": 1536,
+    "alto": 1024,
+    "anchos": [
+      480,
+      800,
+      1200,
+      1536
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "cafeteria-barra",
+    "origen": "2026/03/logo-cafeteria.png",
+    "ia": true,
+    "ancho": 1536,
+    "alto": 1024,
+    "anchos": [
+      480,
+      800,
+      1200,
+      1536
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  },
+  {
+    "nombre": "escalera",
+    "origen": "2025/11/bannerpasillo.png",
+    "ia": true,
+    "ancho": 1536,
+    "alto": 1024,
+    "anchos": [
+      480,
+      800,
+      1200,
+      1536
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ]
+  }
+]

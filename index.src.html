@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Neixón · Hotel Rural en Boiro · Ocho habitaciones y dos bungalows junto a la ría</title>
+<meta name="description" content="Hotel rural familiar en Neixón (Boiro, A Coruña): ocho habitaciones con baño, dos bungalows con cocina y una cafetería, entre el pinar y la ría de Arousa. Parking propio y wifi gratis.">
+<meta name="theme-color" content="#171A17">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Neixón · Hotel Rural en Boiro">
+<meta property="og:description" content="Ocho habitaciones, dos bungalows y una cafetería entre el pinar y la ría de Arousa.">
+<meta property="og:image" content="img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- script bloqueante: clases antes del primer pintado -->
+<script>
+(function (d) {
+  var h = d.documentElement;
+  h.classList.add('js');
+  // MANDO DE MAQUETA (no viaja al cliente): solo con ?revision
+  try {
+    var q = new URLSearchParams(location.search);
+    if (q.has('revision')) {
+      h.classList.add('revision');
+      if (q.get('densidad') === 'sobria') h.classList.add('densidad-sobria');
+    }
+  } catch (e) {}
+  // red de seguridad por si main.js no llega: la cortina se va sola
+  window.__redCortina = setTimeout(function () { h.classList.add('cortina-fuera'); }, 6500);
+})(document);
+</script>
+
+<!-- la foto del hero (LCP) empieza a bajar antes que el CSS y los scripts -->
+<link rel="preload" as="image" type="image/avif" fetchpriority="high"
+      imagesrcset="img/fotos/fachada-480.avif 480w, img/fotos/fachada-800.avif 800w, img/fotos/fachada-1200.avif 1200w, img/fotos/fachada-1600.avif 1600w"
+      imagesizes="(max-width: 899px) min(62vw, 300px), 440px">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,100;1,9..144,300..600,100&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="css/estilos.css?v=83e02af7">
+<link rel="icon" href="marca/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="marca/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="marca/apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<noscript><style>.cortina{display:none!important}</style></noscript>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hotel",
+  "name": "Neixón Hotel Rural",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Neixón, 58",
+    "postalCode": "15991",
+    "addressLocality": "Boiro",
+    "addressRegion": "A Coruña",
+    "addressCountry": "ES"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 42.66718, "longitude": -8.84409 },
+  "telephone": "+34 680 882 702",
+  "email": "info@ruralneixon.com",
+  "checkinTime": "17:00",
+  "checkoutTime": "12:00",
+  "numberOfRooms": 10,
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Wifi gratuito", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Aparcamiento privado gratuito", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Cafetería", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Jardín y barbacoa", "value": true }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="saltar" href="#principal">Saltar al contenido</a>
+
+<!-- ============ cortina: el anillo se coloca piedra a piedra y se abre ============ -->
+<div class="cortina" id="cortina" aria-hidden="true">
+  <svg class="cortina__lienzo" id="cortina-lienzo" focusable="false">
+    <path class="cortina__muro" id="cortina-muro" fill-rule="evenodd"/>
+  </svg>
+  <div class="cortina__logo" id="cortina-logo">
+    <div class="cortina__foto" id="cortina-foto"></div>
+    <!--svg:marca/anillo.svg id="cortina-anillo" class="cortina__anillo" focusable="false"-->
+    <!--svg:marca/texto.svg id="cortina-texto" class="cortina__texto" focusable="false"-->
+  </div>
+  <p class="cortina__txt" id="cortina-txt">Boiro · ría de Arousa</p>
+</div>
+
+<!-- ============ cabecera ============ -->
+<header class="cab" id="cab">
+  <div class="cab__env">
+    <a class="cab__logo" href="#inicio" aria-label="Neixón Hotel Rural, al inicio">
+      <!--svg:marca/anillo.svg class="cab__marca" aria-hidden="true" focusable="false"-->
+      <span class="cab__nombre" aria-hidden="true">Neixón<small>Hotel Rural</small></span>
+    </a>
+    <nav class="cab__nav" aria-label="Principal">
+      <a href="#habitaciones">Habitaciones</a>
+      <a href="#bungalows">Bungalows</a>
+      <a href="#cafeteria">Cafetería</a>
+      <a href="#entorno">El Barbanza</a>
+      <a href="#llegar">Cómo llegar</a>
+    </nav>
+    <a class="btn btn--claro cab__cta" href="#consulta">Consultar fechas</a>
+    <button class="cab__menu" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu-movil">
+      <span class="cab__menu-txt">Menú</span><span class="cab__menu-raya" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu-movil" id="menu-movil" aria-hidden="true">
+  <nav aria-label="Menú">
+    <a href="#habitaciones">Habitaciones</a>
+    <a href="#bungalows">Bungalows</a>
+    <a href="#cafeteria">Cafetería</a>
+    <a href="#entorno">El Barbanza</a>
+    <a href="#opiniones">Opiniones</a>
+    <a href="#llegar">Cómo llegar</a>
+    <a href="#consulta">Consultar fechas</a>
+  </nav>
+  <p class="menu-movil__tel"><a href="tel:+34680882702">680 882 702</a></p>
+</div>
+
+<main id="principal">
+
+<!-- ============ 1. hero: el anillo que se gira ============ -->
+<section class="hero" id="inicio" aria-labelledby="hero-tit">
+  <div class="hero__env">
+    <div class="hero__texto">
+      <p class="eti eti--claro">Hotel rural · Neixón, Boiro</p>
+      <h1 class="hero__tit" id="hero-tit" data-partir>Dentro del círculo, todo va más&nbsp;despacio.</h1>
+      <p class="hero__entra">Ocho habitaciones con baño, dos bungalows con cocina y una cafetería, entre el pinar y la ría de Arousa. Un hotel familiar, con parking propio y el castro de Neixón a siete minutos a pie.</p>
+      <div class="hero__acc">
+        <a class="btn btn--claro" href="#consulta">Consultar fechas</a>
+        <a class="btn btn--linea-claro" href="#habitaciones">Ver las habitaciones</a>
+      </div>
+      <p class="hero__dato" id="dato-vivo"><span class="hero__punto" aria-hidden="true"></span><span id="dato-vivo-txt">Llegadas de 17:00 a 22:00 · salidas hasta las 12:00</span></p>
+    </div>
+
+    <div class="dial" id="dial">
+      <div class="dial__marco">
+        <div class="dial__ventana" id="dial-ventana">
+          <img data-foto="fachada" alt="Fachada del hotel: piedra clara, una torre de cristal y un árbol en la rotonda de grava" sizes="(max-width: 899px) min(62vw, 300px), 440px" fetchpriority="high" loading="eager" class="dial__foto es-actual" data-vista="0">
+          <img data-foto="balcon-pinar" alt="Balcón de una habitación con mesa y sillas, mirando al pinar" sizes="(max-width: 899px) min(62vw, 300px), 440px" class="dial__foto" data-vista="1">
+          <img data-foto="jacuzzi" alt="Baño con bañera de hidromasaje" sizes="(max-width: 899px) min(62vw, 300px), 440px" class="dial__foto" data-vista="2">
+          <img data-foto="bungalow-i-chimenea" alt="Salón del bungalow I con chimenea de piedra" sizes="(max-width: 899px) min(62vw, 300px), 440px" class="dial__foto" data-vista="3">
+          <img data-foto="cafeteria-barra" alt="Barra de la cafetería, con el logo de Neixón en la pared" sizes="(max-width: 899px) min(62vw, 300px), 440px" class="dial__foto" data-vista="4">
+        </div>
+        <!--svg:marca/anillo.svg id="dial-anillo" class="dial__anillo" aria-hidden="true" focusable="false"-->
+        <button class="dial__agarre" id="dial-agarre" type="button" aria-describedby="dial-ayuda">
+          <span class="visualmente-oculto">Girar el anillo: siguiente vista</span>
+        </button>
+      </div>
+      <div class="dial__pie">
+        <button class="dial__flecha" type="button" id="dial-ant" aria-label="Vista anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <p class="dial__nombre" id="dial-nombre" aria-live="polite"><span class="dial__num" id="dial-num">01 / 05</span> <span id="dial-txt">La casa</span></p>
+        <button class="dial__flecha" type="button" id="dial-sig" aria-label="Vista siguiente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+      <p class="dial__ayuda" id="dial-ayuda">Gire el anillo con el dedo o el ratón (o con las flechas del teclado) para ver el hotel.</p>
+    </div>
+  </div>
+  <p class="hero__coord" aria-label="Coordenadas del hotel">42° 40′ 02″ N · 8° 50′ 39″ O</p>
+</section>
+
+<!-- ============ 2. la casa ============ -->
+<section class="casa" id="casa" aria-labelledby="casa-tit">
+  <div class="env">
+    <div class="casa__cab">
+      <p class="eti" data-lamina>La casa</p>
+      <h2 class="tit" id="casa-tit" data-partir>Pequeño a propósito.</h2>
+    </div>
+    <div class="casa__cuerpo">
+      <p class="casa__lead">Neixón es un hotel familiar de piedra en Boiro, entre el pinar y la ría. Tiene diez sitios para dormir, y nada más: así da tiempo a saber quién llega, a qué hora y si quiere el café solo o con leche.</p>
+      <ol class="cifras">
+        <li><b class="cifras__n">8</b><span>habitaciones, cada una con su baño</span></li>
+        <li><b class="cifras__n">2</b><span>bungalows con salón-cocina</span></li>
+        <li><b class="cifras__n">1</b><span>cafetería con repostería casera</span></li>
+      </ol>
+      <ul class="servicios" aria-label="Servicios incluidos">
+        <li>Wifi en todo el hotel</li>
+        <li>Parking propio y gratuito</li>
+        <li>Desayuno</li>
+        <li>Jardín y zona de barbacoa</li>
+        <li>Alquiler de bicicletas</li>
+        <li>Calefacción con termostato en cada habitación</li>
+        <li>Lavandería</li>
+        <li>Instalaciones adaptadas</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="hilera" aria-hidden="true"></div>
+
+<!-- ============ 3. habitaciones: un muro de piedras ============ -->
+<section class="habs" id="habitaciones" aria-labelledby="habs-tit">
+  <div class="env">
+    <div class="habs__cab">
+      <p class="eti" data-lamina>Dónde dormir</p>
+      <h2 class="tit" id="habs-tit" data-partir>Diez piedras, diez maneras de quedarse.</h2>
+      <p class="habs__lead">Cada habitación es distinta. Filtre por lo que busca y abra la que le guste para ver sus camas y su equipamiento.</p>
+    </div>
+
+    <div class="filtros" role="group" aria-label="Filtrar alojamientos">
+      <button type="button" class="filtro" data-filtro="todas" aria-pressed="true">Todas <span>10</span></button>
+      <button type="button" class="filtro" data-filtro="terraza" aria-pressed="false">Con terraza o balcón <span>4</span></button>
+      <button type="button" class="filtro" data-filtro="jacuzzi" aria-pressed="false">Con jacuzzi <span>1</span></button>
+      <button type="button" class="filtro" data-filtro="familia" aria-pressed="false">Para tres o más <span>4</span></button>
+      <button type="button" class="filtro" data-filtro="cocina" aria-pressed="false">Con cocina <span>2</span></button>
+    </div>
+    <p class="visualmente-oculto" id="filtro-estado" aria-live="polite"></p>
+
+    <ul class="muro" id="muro">
+      <!-- data-forma: piedra del anillo que da forma a la foto (la pone castro.js) -->
+      <li class="muro__p muro__p--g" data-hab="suite" data-tags="terraza jacuzzi" data-forma="0">
+        <button type="button" class="muro__btn" aria-haspopup="dialog">
+          <span class="muro__foto"><img data-foto="suite" alt="" sizes="(max-width: 699px) 92vw, (max-width: 1099px) 46vw, 34vw"></span>
+          <span class="muro__num">01</span>
+          <span class="muro__nom">Suite</span>
+          <span class="muro__res">2 adultos · balcón y jacuzzi</span>
+        </button>
+        <div class="ficha-datos" hidden>
+          <p class="ficha-datos__lead">La más completa: cama de 180 cm, sofá, balcón y bañera de hidromasaje en el baño.</p>
+          <dl>
+            <dt>Capacidad</dt><dd>2 adultos</dd>
+            <dt>Cama</dt><dd>Queen size, 180 cm</dd>
+            <dt>Exterior</dt><dd>Balcón</dd>
+            <dt>Baño</dt><dd>Privado, con jacuzzi</dd>
+            <dt>Además</dt><dd>Sofá, TV, wifi, secador, calefacción con termostato</dd>
+          </dl>
+          <img data-foto="suite-jacuzzi" alt="Baño de la suite con bañera de hidromasaje" sizes="(max-width: 699px) 90vw, 420px">
+        </div>
+      </li>
+      <li class="muro__p" data-hab="confort" data-tags="terraza familia" data-forma="1">
+        <button type="button" class="muro__btn" aria-haspopup="dialog">
+          <span class="muro__foto"><img data-foto="confort" alt="" sizes="(max-width: 699px) 92vw, (max-width: 1099px) 46vw, 26vw"></span>
+          <span class="muro__num">02</span>
+          <span class="muro__nom">Confort</span>
+          <span class="muro__res">Hasta 3 adultos · terraza</span>
+        </button>
+        <div class="ficha-datos" hidden>
+          <p class="ficha-datos__lead">Dormitorio y rincón de estar separados por un tabique, con terraza: sirve a una pareja o a una familia pequeña.</p>
+          <dl>
+            <dt>Capacidad</dt><dd>3 adultos, o 2 adultos y 2 niños</dd>
+            <dt>Camas</dt><dd>160 cm y sofá cama de 120 cm</dd>
+            <dt>Exterior</dt><dd>Terraza</dd>
+            <dt>Baño</dt><dd>Privado</dd>
+            <dt>Además</dt><dd>Sofá, TV, wifi, secador, calefacción con termostato</dd>
+          </dl>
+        </div>
+      </li>
+      <li class="muro__p" data-hab="doble" data-tags="" data-forma="2">
+        <button type="button" class="muro__btn" aria-haspopup="dialog">
+          <span class="muro__foto"><img data-foto="doble" alt="" sizes="(max-width: 699px) 92vw, (max-width: 1099px) 46vw, 26vw"></span>
+          <span class="muro__num">03</span>
+          <span class="muro__nom">Doble</span>
+          <span class="muro__res">2 adultos · cama de 150</span>
+        </button>
+        <div class="ficha-datos" hidden>
+          <p class="ficha-datos__lead">Sencilla y luminosa, con una cama de 150 cm y el papel pintado de flores que la distingue.</p>
+          <dl>
+            <dt>Capacidad</dt><dd>2 adultos</dd>
+            <dt>Cama</dt><dd>150 cm</dd>
+            <dt>Baño</dt><dd>Privado</dd>
+            <dt>Además</dt><dd>TV, wifi, secador, calefacción con termostato</dd>
+          </dl>
+        </div>
+      </li>
+      <li class="muro__p" data-hab="duplex" data-tags="familia" data-forma="3">
+        <button type="button" class="muro__btn" aria-haspopup="dialog">
+          <span class="muro__foto"><img data-foto="duplex" alt="" sizes="(max-width: 699px) 92vw, (max-width: 1099px) 46vw, 26vw"></span>
+          <span class="muro__num">04</span>
+          <span class="muro__nom">Dúplex</span>
+          <span class="muro__res">2 adultos y 1 niño · dos camas</span>
+        </button>
+        <div class="ficha-datos" hidden>
+          <p class="ficha-datos__lead">Dos camas de 110 cm y sitio para una supletoria: la que suelen pedir las familias con un niño.</p>
+          <dl>
+            <dt>Capacidad</dt><dd>2 adultos y 1 niño</dd>
+            <dt>Camas</dt><dd>2 de 110 cm, más supletoria</dd>
+            <dt>Baño</dt><dd>Privado</dd>
+            <dt>Además</dt><dd>TV, wifi, secador, calefacción con termostato</dd>
+          </dl>
+        </div>
+      </li>
+      <li class="muro__p" data-hab="terraza" data-tags="terraza" data-forma="4">
+        <button type="button" class="muro__btn" aria-haspopup="dialog">
+          <span class="muro__foto"><img data-foto="terraza" alt="" sizes="(max-width: 699px) 92vw, (max-width: 1099px) 46vw, 26vw"></span>
+          <span class="muro__num">05</span>
+          <span class="muro__nom">Terraza</span>
+          <span class="muro__res">2 adultos · terraza con tumbonas</span>
+        </button>
+        <div class="ficha-datos" hidden>
+          <p class="ficha-datos__lead">Una terraza grande con tumbonas, abierta al pinar.</p>
+          <dl>
+            <dt>Capacidad</dt><dd>2 adultos</dd>
+            <dt>Cama</dt><dd>135 cm</dd>
+            <dt>Exterior</dt><dd>Terraza con tumbonas</dd>
+            <dt>Baño</dt><dd>Privado</dd>
+            <dt>Además</dt><dd>TV, wifi, secador, calefacción con termostato</dd>
+          </dl>
+          <img data-foto="terraza-fuera" alt="Terraza con tumbonas y macetas frente al pinar" sizes="(max-width: 699px) 90vw, 420px">
+        </div>
+      </li>
+      <li class="muro__p muro__p--g" data-hab="terraza-superior" data-tags="terraza familia" data-forma="5">
+        <button type="button" class="muro__btn" aria-haspopup="dialog">
+          <span class="muro__foto"><img data-foto="terraza-superior-tumbonas" alt="" sizes="(max-width: 699px) 92vw, (max-width: 1099px) 46vw, 34vw"></span>
+          <span class="muro__num">06</span>
+          <span class="muro__nom">Terraza Superior</span>
+          <span class="muro__res">2 adultos y 1 niño · terraza y sofá</span>
+        </button>
+        <div class="ficha-datos" hidden>
+          <p class="ficha-datos__lead">Más amplia que la Terraza, con sofá y sitio para una supletoria.</p>
+          <dl>
+            <dt>Capacidad</dt><dd>2 adultos y 1 niño</dd>
+            <dt>Camas</dt><dd>160 cm, más supletoria</dd>
+            <dt>Exterior</dt><dd>Terraza con tumbonas</dd>
+            <dt>Baño</dt><dd>Privado</dd>
+            <dt>Además</dt><dd>Sofá, TV, wifi, secador, calefacción con termostato</dd>
+          </dl>
+          <img data-foto="terraza-superior" alt="Dormitorio de la Terraza Superior con cama de matrimonio" sizes="(max-width: 699px) 90vw, 420px">
+        </div>
+      </li>
+      <li class="muro__p" data-hab="atico" data-tags="" data-forma="6">
+        <button type="button" class="muro__btn" aria-haspopup="dialog">
+          <span class="muro__foto"><img data-foto="atico" alt="" sizes="(max-width: 699px) 92vw, (max-width: 1099px) 46vw, 26vw"></span>
+          <span class="muro__num">07</span>
+          <span class="muro__nom">Ático</span>
+          <span class="muro__res">2 adultos · bajo las vigas</span>
+        </button>
+        <div class="ficha-datos" hidden>
+          <p class="ficha-datos__lead">Abuhardillada, con el techo inclinado y vigas de madera vistas.</p>
+          <dl>
+            <dt>Capacidad</dt><dd>2 adultos</dd>
+            <dt>Cama</dt><dd>150 cm</dd>
+            <dt>Baño</dt><dd>Privado</dd>
+            <dt>Además</dt><dd>TV, wifi, secador, calefacción con termostato</dd>
+          </dl>
+        </div>
+      </li>
+      <li class="muro__p" data-hab="superior" data-tags="" data-forma="7">
+        <button type="button" class="muro__btn" aria-haspopup="dialog">
+          <span class="muro__foto"><img data-foto="superior" alt="" sizes="(max-width: 699px) 92vw, (max-width: 1099px) 46vw, 26vw"></span>
+          <span class="muro__num">08</span>
+          <span class="muro__nom">Superior</span>
+          <span class="muro__res">2 adultos · dos camas</span>
+        </button>
+        <div class="ficha-datos" hidden>
+          <p class="ficha-datos__lead">Dos camas de 110 cm, para amigos o para quien duerme mejor a su aire.</p>
+          <dl>
+            <dt>Capacidad</dt><dd>2 adultos</dd>
+            <dt>Camas</dt><dd>2 de 110 cm</dd>
+            <dt>Baño</dt><dd>Privado</dd>
+            <dt>Además</dt><dd>TV, wifi, secador, calefacción con termostato</dd>
+          </dl>
+        </div>
+      </li>
+      <li class="muro__p" data-hab="bungalow-i" data-tags="cocina" data-forma="8">
+        <button type="button" class="muro__btn" aria-haspopup="dialog">
+          <span class="muro__foto"><img data-foto="bungalow-i" alt="" sizes="(max-width: 699px) 92vw, (max-width: 1099px) 46vw, 26vw"></span>
+          <span class="muro__num">09</span>
+          <span class="muro__nom">Bungalow I</span>
+          <span class="muro__res">2 adultos · chimenea y barbacoa</span>
+        </button>
+        <div class="ficha-datos" hidden>
+          <p class="ficha-datos__lead">Una casita para dos, con chimenea en el salón y salida a un patio trasero con barbacoa.</p>
+          <dl>
+            <dt>Capacidad</dt><dd>2 adultos</dd>
+            <dt>Cama</dt><dd>150 cm</dd>
+            <dt>Salón-cocina</dt><dd>Mesa de comedor, vajilla completa, microondas y vitrocerámica</dd>
+            <dt>Exterior</dt><dd>Patio trasero con barbacoa</dd>
+            <dt>Además</dt><dd>Chimenea, artículos de aseo, TV, wifi</dd>
+          </dl>
+          <img data-foto="bungalow-i-chimenea" alt="Chimenea del salón del bungalow I" sizes="(max-width: 699px) 90vw, 420px">
+        </div>
+      </li>
+      <li class="muro__p" data-hab="bungalow-ii" data-tags="cocina familia" data-forma="9">
+        <button type="button" class="muro__btn" aria-haspopup="dialog">
+          <span class="muro__foto"><img data-foto="bungalow-ii" alt="" sizes="(max-width: 699px) 92vw, (max-width: 1099px) 46vw, 26vw"></span>
+          <span class="muro__num">10</span>
+          <span class="muro__nom">Bungalow II</span>
+          <span class="muro__res">Hasta 4 adultos · dos dormitorios</span>
+        </button>
+        <div class="ficha-datos" hidden>
+          <p class="ficha-datos__lead">Para familias o amigos: dos dormitorios con dos camas cada uno y un salón-cocina amplio.</p>
+          <dl>
+            <dt>Capacidad</dt><dd>Hasta 4 adultos</dd>
+            <dt>Camas</dt><dd>2 dormitorios, cada uno con 2 camas sencillas</dd>
+            <dt>Salón-cocina</dt><dd>Encimera amplia, menaje y electrodomésticos básicos</dd>
+            <dt>Además</dt><dd>Artículos de aseo, TV, wifi</dd>
+          </dl>
+          <img data-foto="bungalow-ii-cocina" alt="Cocina de madera del bungalow II" sizes="(max-width: 699px) 90vw, 420px">
+        </div>
+      </li>
+    </ul>
+
+    <!-- solo en la versión «Sobria»: la misma información, en tabla -->
+    <div class="tabla-habs" id="tabla-habs">
+      <table>
+        <caption>Las diez, de un vistazo</caption>
+        <thead><tr><th scope="col">Alojamiento</th><th scope="col">Personas</th><th scope="col">Camas</th><th scope="col">Exterior</th><th scope="col">Extra</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Suite</th><td>2</td><td>180</td><td>Balcón</td><td>Jacuzzi, sofá</td></tr>
+          <tr><th scope="row">Confort</th><td>3, o 2 + 2 niños</td><td>160 + sofá cama</td><td>Terraza</td><td>Sofá</td></tr>
+          <tr><th scope="row">Doble</th><td>2</td><td>150</td><td>—</td><td>—</td></tr>
+          <tr><th scope="row">Dúplex</th><td>2 + 1 niño</td><td>2 × 110 + supletoria</td><td>—</td><td>—</td></tr>
+          <tr><th scope="row">Terraza</th><td>2</td><td>135</td><td>Terraza con tumbonas</td><td>—</td></tr>
+          <tr><th scope="row">Terraza Superior</th><td>2 + 1 niño</td><td>160 + supletoria</td><td>Terraza con tumbonas</td><td>Sofá</td></tr>
+          <tr><th scope="row">Ático</th><td>2</td><td>150</td><td>—</td><td>Vigas de madera</td></tr>
+          <tr><th scope="row">Superior</th><td>2</td><td>2 × 110</td><td>—</td><td>—</td></tr>
+          <tr><th scope="row">Bungalow I</th><td>2</td><td>150</td><td>Patio con barbacoa</td><td>Chimenea, cocina</td></tr>
+          <tr><th scope="row">Bungalow II</th><td>4</td><td>2 dormitorios × 2 camas</td><td>—</td><td>Cocina</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="habs__nota">En todas: baño privado, wifi, TV, secador y calefacción con termostato individual. Llegadas de 17:00 a 22:00 y salidas de 10:00 a 12:00; si va a llegar tarde, avísenos.</p>
+  </div>
+</section>
+
+<!-- ficha de cada alojamiento (la rellena el JS con los datos del muro) -->
+<dialog class="ficha" id="ficha" aria-labelledby="ficha-tit">
+  <div class="ficha__caja">
+    <button type="button" class="ficha__cerrar" id="ficha-cerrar" aria-label="Cerrar la ficha"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="ficha__fotos" id="ficha-fotos"></div>
+    <div class="ficha__texto">
+      <p class="eti" id="ficha-num"></p>
+      <h3 class="ficha__tit" id="ficha-tit"></h3>
+      <div id="ficha-cuerpo"></div>
+      <a class="btn" href="#consulta" id="ficha-consultar">Consultar fechas para esta</a>
+    </div>
+  </div>
+</dialog>
+
+<!-- ============ 4. bungalows ============ -->
+<section class="bung" id="bungalows" aria-labelledby="bung-tit">
+  <div class="env bung__env">
+    <figure class="bung__foto bung__foto--a">
+      <img data-foto="bungalows" alt="Los dos bungalows: muro de piedra y cal, cristaleras y teja" sizes="(max-width: 899px) 100vw, 52vw">
+    </figure>
+    <div class="bung__texto">
+      <p class="eti" data-lamina>Los bungalows</p>
+      <h2 class="tit" id="bung-tit" data-partir>Una casa propia, con la chimenea encendida.</h2>
+      <p>Dos bungalows independientes, con su puerta, su baño y su salón-cocina. El pequeño es para dos y tiene chimenea y un patio trasero con barbacoa. El grande tiene dos dormitorios y sirve a cuatro.</p>
+      <blockquote class="cita">
+        <p>«Nos alojamos en un bungalow nuestra noche de bodas. La dueña fue un auténtico encanto, nos facilitó todo muchísimo.»</p>
+        <footer>— Guss, en Google, agosto de 2025</footer>
+      </blockquote>
+      <div class="bung__acc">
+        <a class="btn" href="#consulta" data-elige="bungalow-i">Consultar el Bungalow I</a>
+        <a class="btn btn--linea" href="#consulta" data-elige="bungalow-ii">Consultar el Bungalow II</a>
+      </div>
+    </div>
+    <figure class="bung__foto bung__foto--b">
+      <img data-foto="bungalow-i-salon" alt="Salón-comedor del bungalow I con aparador de madera" sizes="(max-width: 899px) 60vw, 22vw">
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 5. cafetería ============ -->
+<section class="cafe" id="cafeteria" aria-labelledby="cafe-tit">
+  <div class="env cafe__env">
+    <div class="cafe__texto">
+      <p class="eti eti--claro" data-lamina>La cafetería</p>
+      <h2 class="tit" id="cafe-tit" data-partir>El café, con calma.</h2>
+      <p>En la planta baja está la cafetería: café recién hecho, repostería casera y producto de la zona. Es donde se desayuna, donde se para a media tarde y donde se pregunta por la playa de mañana.</p>
+      <p class="cafe__nota">«Buen desayuno incluido en el precio final.» — Concepción, en Google</p>
+    </div>
+    <figure class="cafe__foto cafe__foto--a">
+      <img data-foto="cafeteria-barra" alt="Barra de madera de la cafetería con el logo de Neixón en la pared" sizes="(max-width: 899px) 100vw, 50vw">
+    </figure>
+    <figure class="cafe__foto cafe__foto--b">
+      <img data-foto="cafe" alt="Dos cafés con leche y galletas sobre una mesa de madera" sizes="(max-width: 899px) 70vw, 26vw">
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 6. el Barbanza: mapa de verdad ============ -->
+<section class="entorno" id="entorno" aria-labelledby="entorno-tit">
+  <div class="env">
+    <div class="entorno__cab">
+      <p class="eti" data-lamina>El Barbanza</p>
+      <h2 class="tit" id="entorno-tit" data-partir>Todo lo que hay alrededor, en minutos de verdad.</h2>
+      <p class="entorno__lead">Las distancias salen de calcular la ruta por carretera (y a pie, para lo que está cerca) desde la puerta del hotel con los mapas de OpenStreetMap.</p>
+    </div>
+    <div class="entorno__cuerpo">
+      <div class="lamina" id="lamina">
+        <canvas class="lamina__lienzo" id="lamina-lienzo" aria-hidden="true"></canvas>
+        <p class="lamina__fuente">Mapa: © colaboradores de OpenStreetMap (ODbL)</p>
+      </div>
+      <div class="lugares" id="lugares">
+        <div class="filtros filtros--lugares" role="group" aria-label="Filtrar lugares">
+          <button type="button" class="filtro" data-tipo="todos" aria-pressed="true">Todo</button>
+          <button type="button" class="filtro" data-tipo="playa" aria-pressed="false">Playas</button>
+          <button type="button" class="filtro" data-tipo="castro" aria-pressed="false">Castros y piedra</button>
+          <button type="button" class="filtro" data-tipo="excursion" aria-pressed="false">Excursiones</button>
+        </div>
+        <ol class="lugares__lista" id="lugares-lista">
+          <!-- la rellena mapa.js desde js/barbanza.js; sin JS queda este resumen -->
+          <li class="lugares__sin-js">Playas de Barraña, Carragueiros y Mañóns · Castro de Neixón y Centro Arqueolóxico do Barbanza · Monte Iroite y la Serra do Barbanza · Castro de Baroña · Dunas de Corrubedo · Torres do Oeste · Illa de Cortegada.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hilera" aria-hidden="true"></div>
+
+<!-- ============ 7. opiniones ============ -->
+<section class="opi" id="opiniones" aria-labelledby="opi-tit">
+  <div class="env">
+    <p class="eti" data-lamina>Lo que cuentan</p>
+    <h2 class="tit" id="opi-tit" data-partir>«El hotel perfecto para entrar en otro mundo.»</h2>
+    <p class="opi__fuente">Tony y Pili, de Valencia, en Google (agosto de 2025). Y otros que han dormido aquí:</p>
+    <ul class="opi__lista">
+      <li class="opi__item">
+        <blockquote><p>«Una auténtica joya para desconectar. A pocos pasos hay un paseo precioso que rodea la zona, con vistas que invitan a caminar sin prisa, y pequeñas calas escondidas donde refrescarse en aguas tranquilas.»</p></blockquote>
+        <p class="opi__quien">Ade · agosto de 2025</p>
+      </li>
+      <li class="opi__item">
+        <blockquote><p>«Tranquilo, limpio, muy acogedor. Marisa, la gerente, majísima. Buen desayuno incluido en el precio final.»</p></blockquote>
+        <p class="opi__quien">Concepción · agosto de 2025</p>
+      </li>
+      <li class="opi__item">
+        <blockquote><p>«El aparcamiento privado es amplio y seguro, ideal para quienes viajamos en moto. Camas y almohadas comodísimas.»</p></blockquote>
+        <p class="opi__quien">Ade · agosto de 2025</p>
+      </li>
+      <li class="opi__item">
+        <blockquote><p>«Hotel muy bonito y muy tranquilo con una atención excelente.»</p></blockquote>
+        <p class="opi__quien">Mónica · julio de 2025</p>
+      </li>
+    </ul>
+    <p class="opi__ver"><a class="enlace" href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Rural+Neix%C3%B3n+Boiro" target="_blank" rel="noopener">Leer todas las reseñas en Google <span class="visualmente-oculto">(se abre en otra pestaña)</span></a></p>
+  </div>
+</section>
+
+<!-- ============ 8. consulta: formulario → WhatsApp o correo ============ -->
+<section class="consulta" id="consulta" aria-labelledby="consulta-tit">
+  <div class="env consulta__env">
+    <div class="consulta__texto">
+      <p class="eti eti--claro" data-lamina>Consultar fechas</p>
+      <h2 class="tit" id="consulta-tit" data-partir>Díganos cuándo, y le contestamos nosotros.</h2>
+      <p>No es una reserva automática: le escribe una persona del hotel con la disponibilidad y el precio de esas fechas. Si lo prefiere, llame.</p>
+      <ul class="consulta__vias">
+        <li><a href="tel:+34680882702">680 882 702</a> <span>móvil y WhatsApp</span></li>
+        <li><a href="tel:+34981862456">981 86 24 56</a> <span>fijo</span></li>
+        <li><a href="mailto:info@ruralneixon.com">info@ruralneixon.com</a></li>
+      </ul>
+    </div>
+    <form class="form" id="form-consulta" novalidate>
+      <div class="form__fila">
+        <div class="campo">
+          <label for="c-entrada">Llegada</label>
+          <input type="date" id="c-entrada" name="entrada" required>
+        </div>
+        <div class="campo">
+          <label for="c-salida">Salida</label>
+          <input type="date" id="c-salida" name="salida" required>
+        </div>
+      </div>
+      <div class="form__fila">
+        <div class="campo">
+          <label for="c-adultos">Adultos</label>
+          <select id="c-adultos" name="adultos">
+            <option>1</option><option selected>2</option><option>3</option><option>4</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="c-ninos">Niños</label>
+          <select id="c-ninos" name="ninos">
+            <option selected>0</option><option>1</option><option>2</option>
+          </select>
+        </div>
+      </div>
+      <div class="campo">
+        <label for="c-hab">Alojamiento</label>
+        <select id="c-hab" name="hab">
+          <option value="">El que esté libre</option>
+          <option value="suite">Suite</option>
+          <option value="confort">Confort</option>
+          <option value="doble">Doble</option>
+          <option value="duplex">Dúplex</option>
+          <option value="terraza">Terraza</option>
+          <option value="terraza-superior">Terraza Superior</option>
+          <option value="atico">Ático</option>
+          <option value="superior">Superior</option>
+          <option value="bungalow-i">Bungalow I</option>
+          <option value="bungalow-ii">Bungalow II</option>
+        </select>
+      </div>
+      <div class="campo">
+        <label for="c-nombre">Su nombre</label>
+        <input type="text" id="c-nombre" name="nombre" autocomplete="name" required>
+      </div>
+      <div class="campo">
+        <label for="c-nota">Algo más <span class="campo__opc">(opcional)</span></label>
+        <textarea id="c-nota" name="nota" rows="3" placeholder="Hora de llegada, si viene con mascota, una cuna…"></textarea>
+      </div>
+      <p class="form__error" id="form-error" role="alert" hidden></p>
+      <div class="form__acc">
+        <button type="submit" class="btn btn--claro" data-via="whatsapp">Enviar por WhatsApp</button>
+        <button type="submit" class="btn btn--linea-claro" data-via="correo">Enviar por correo</button>
+      </div>
+      <p class="form__legal">Se abre su WhatsApp o su correo con el mensaje escrito; nada se envía hasta que usted lo mande. Sus datos solo se usan para contestarle (<a href="privacidad.html">privacidad</a>). Antes de reservar, lea la <a href="cancelacion.html">política de cancelación</a>.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ 9. cómo llegar ============ -->
+<section class="llegar" id="llegar" aria-labelledby="llegar-tit">
+  <div class="env llegar__env">
+    <div class="llegar__texto">
+      <p class="eti" data-lamina>Cómo llegar</p>
+      <h2 class="tit" id="llegar-tit" data-partir>Neixón, 58. Boiro.</h2>
+      <address>Neixón, 58 · 15991 Boiro (A Coruña)</address>
+      <ul class="rutas" id="rutas">
+        <li><b>Santiago de Compostela</b><span>50 km · unos 40 min</span><small>AP-9 hasta Padrón y AG-11 hacia Ribeira</small></li>
+        <li><b>Aeropuerto de Santiago</b><span>66 km · unos 45 min</span><small>AP-9 dirección Pontevedra y AG-11 hacia Boiro</small></li>
+        <li><b>A Coruña</b><span>110 km · 1 h 15 min</span><small>AP-9 hasta Padrón y AG-11</small></li>
+        <li><b>Vigo</b><span>120 km · 1 h 20 min</span><small>AP-9 hacia Santiago y salida a la AG-11</small></li>
+      </ul>
+      <p class="llegar__nota">En Boiro, siga las indicaciones a Punta de Neixón. El hotel tiene parking propio y gratuito.</p>
+    </div>
+    <div class="mapa" id="mapa">
+      <div class="mapa__consent" id="mapa-consent">
+        <p>El mapa de Google se carga solo si lo pide (Google puede usar cookies).</p>
+        <button type="button" class="btn btn--linea" id="mapa-btn">Ver el mapa</button>
+        <a class="enlace" href="https://www.google.com/maps/dir/?api=1&amp;destination=42.66718,-8.84409" target="_blank" rel="noopener">Abrir la ruta en Google Maps <span class="visualmente-oculto">(se abre en otra pestaña)</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ESPACIO: galería completa, solo en la versión «Sobria» -->
+<section class="galeria" id="galeria" aria-labelledby="galeria-tit">
+  <div class="env">
+    <p class="eti" data-lamina>Galería</p>
+    <h2 class="tit" id="galeria-tit">Todo el hotel, foto a foto.</h2>
+    <ul class="galeria__rej">
+      <li><img data-foto="fachada" alt="Fachada de piedra con la torre de cristal" sizes="(max-width: 699px) 50vw, 25vw"></li>
+      <li><img data-foto="balcon-pinar" alt="Balcón mirando al pinar" sizes="(max-width: 699px) 50vw, 25vw"></li>
+      <li><img data-foto="suite" alt="Suite con balcón" sizes="(max-width: 699px) 50vw, 25vw"></li>
+      <li><img data-foto="jacuzzi" alt="Bañera de hidromasaje" sizes="(max-width: 699px) 50vw, 25vw"></li>
+      <li><img data-foto="confort" alt="Habitación Confort" sizes="(max-width: 699px) 50vw, 25vw"></li>
+      <li><img data-foto="doble" alt="Habitación Doble" sizes="(max-width: 699px) 50vw, 25vw"></li>
+      <li><img data-foto="duplex" alt="Habitación Dúplex" sizes="(max-width: 699px) 50vw, 25vw"></li>
+      <li><img data-foto="terraza-fuera" alt="Terraza con tumbonas" sizes="(max-width: 699px) 50vw, 25vw"></li>
+      <li><img data-foto="atico" alt="Habitación Ático con vigas" sizes="(max-width: 699px) 50vw, 25vw"></li>
+      <li><img data-foto="superior" alt="Habitación Superior" sizes="(max-width: 699px) 50vw, 25vw"></li>
+      <li><img data-foto="bungalows-porche" alt="Porche de los bungalows" sizes="(max-width: 699px) 50vw, 25vw"></li>
+      <li><img data-foto="cafeteria-sala" alt="Sala de la cafetería" sizes="(max-width: 699px) 50vw, 25vw"></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ pie: el anillo se cierra con «Consultar» ============ -->
+<footer class="pie" id="pie">
+  <div class="env pie__env">
+    <div class="pie__anillo" id="pie-anillo">
+      <!--svg:marca/logo.svg id="pie-logo" class="pie__logo" aria-hidden="true" focusable="false"-->
+      <a class="pie__cierre" id="pie-cierre" href="#consulta">Consultar fechas</a>
+    </div>
+    <div class="pie__datos">
+      <p class="pie__nombre">Neixón · Hotel Rural</p>
+      <address>Neixón, 58 · 15991 Boiro (A Coruña)</address>
+      <p><a href="tel:+34680882702">680 882 702</a> · <a href="tel:+34981862456">981 86 24 56</a></p>
+      <p><a href="mailto:info@ruralneixon.com">info@ruralneixon.com</a></p>
+      <p class="pie__horas">Llegadas de 17:00 a 22:00 · salidas de 10:00 a 12:00</p>
+    </div>
+    <nav class="pie__legal" aria-label="Legal">
+      <a href="aviso-legal.html">Aviso legal</a>
+      <a href="privacidad.html">Privacidad</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="cancelacion.html">Cancelación</a>
+      <a href="accesibilidad.html">Accesibilidad</a>
+      <button type="button" class="enlace" id="abrir-cookies">Preferencias de cookies</button>
+    </nav>
+    <p class="pie__ue">Financiado por la Unión Europea – NextGenerationEU. Sin embargo, los puntos de vista y las opiniones expresadas son únicamente los del autor o autores y no reflejan necesariamente los de la Unión Europea o la Comisión Europea. Ni la Unión Europea ni la Comisión Europea son responsables de ellas.</p>
+    <p class="pie__copy">© <span id="anno">2026</span> Neixón Hotel Rural · Mapa del Barbanza con datos de © OpenStreetMap</p>
+  </div>
+</footer>
+
+<!-- barra fija en el móvil -->
+<div class="barra" id="barra" aria-hidden="true">
+  <a class="btn btn--claro" href="#consulta" tabindex="-1">Consultar fechas</a>
+  <a class="btn btn--linea-claro" href="https://wa.me/34680882702" tabindex="-1" rel="noopener">WhatsApp</a>
+</div>
+
+<!-- aviso de cookies -->
+<div class="cookies" id="cookies" role="region" aria-label="Aviso de cookies" hidden>
+  <p>Esta web solo guarda en su navegador que ha visto este aviso. El mapa de Google y las letras de Google Fonts se cargan desde Google. Más en <a href="cookies.html">cookies</a>.</p>
+  <div class="cookies__acc">
+    <button type="button" class="btn" id="ck-si">Entendido</button>
+    <button type="button" class="btn btn--linea" id="ck-no">Solo lo necesario</button>
+  </div>
+</div>
+
+<!-- ============ MANDO DE MAQUETA (no viaja al cliente; solo con ?revision) ============ -->
+<div class="mando" id="mando" role="group" aria-label="Versión" hidden>
+  <span class="mando__eti">Versión</span>
+  <button type="button" data-densidad="castro" aria-pressed="true">Castro</button>
+  <button type="button" data-densidad="sobria" aria-pressed="false">Sobria</button>
+</div>
+<!-- fin del MANDO DE MAQUETA ============ -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="js/geometria.js?v=3d7b971e"></script>
+<script src="js/barbanza.js?v=7ef9651f"></script>
+<script src="js/mapa.js?v=60d3c506"></script>
+<script src="js/main.js?v=30729ece"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "Neixón Hotel Rural",
+  "short_name": "Neixón",
+  "start_url": "./",
+  "display": "browser",
+  "background_color": "#171a17",
+  "theme_color": "#171a17",
+  "icons": [
+    { "src": "marca/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
